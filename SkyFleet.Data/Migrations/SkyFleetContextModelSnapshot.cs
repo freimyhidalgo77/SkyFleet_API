@@ -21,6 +21,33 @@ namespace SkyFleet.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("SkyFleet.Data.Model.Rutas", b =>
+                {
+                    b.Property<int>("RutaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RutaId"));
+
+                    b.Property<string>("destino")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("distancia")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("duracion")
+                        .HasColumnType("int");
+
+                    b.Property<string>("origen")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RutaId");
+
+                    b.ToTable("rutas");
+                });
+
             modelBuilder.Entity("SkyFleet.Data.Model.TipoVuelo", b =>
                 {
                     b.Property<int>("tipoVueloId")

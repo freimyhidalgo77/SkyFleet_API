@@ -14,7 +14,6 @@ namespace SkyFleet.Abstraccion
         Task<bool> Eliminar(int rutaId);
         Task<RutaDTO> Buscar(int id);
         Task<List<RutaDTO>> Listar(Expression<Func<RutaDTO, bool>> criterio);
-        Task<bool> RutaExiste(int id, string descripcion);
 
     }
 }
