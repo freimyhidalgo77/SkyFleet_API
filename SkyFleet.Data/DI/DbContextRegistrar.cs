@@ -13,7 +13,7 @@ namespace SkyFleet.Data.DI
     {
         public static IServiceCollection RegisterDbContextFactory(this IServiceCollection services)
         {
-            services.AddDbContextFactory<SkyFleetContext>(o => o.UseSqlServer("Name=ConStr"));
+            services.AddDbContextFactory<SkyFleetContext>(o => o.UseSqlServer("Name=SqlConStr"));
             return services;
         }
 
