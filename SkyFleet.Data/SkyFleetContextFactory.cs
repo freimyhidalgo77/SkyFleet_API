@@ -8,18 +8,18 @@ namespace SkyFleet.Data
 {
     public class SkyFleetContextFactory : IDesignTimeDbContextFactory<SkyFleetContext>
     {
-            public SkyFleetContext CreateDbContext(string[] args)
-            {
-                var optionsBuilder = new DbContextOptionsBuilder<SkyFleetContext>();
+        public SkyFleetContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<SkyFleetContext>();
 
-                var connectionString = "Server=FREIMYHP\\SQLEXPRESS;Database=SkyFleetDb;Trusted_Connection=True;MultipleActiveResultSets=true";
+            var connectionString = "Server=FREIMYHP\\SQLEXPRESS;Database=SkyFleetDb;Integrated Security=True;Encrypt=true;TrustServerCertificate=True;MultipleActiveResultSets=True";
 
-                optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(connectionString);
 
-                return new SkyFleetContext(optionsBuilder.Options);
-            }
+            return new SkyFleetContext(optionsBuilder.Options);
         }
     }
 
 
-    
+}
+

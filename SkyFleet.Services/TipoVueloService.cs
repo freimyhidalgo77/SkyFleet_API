@@ -14,10 +14,10 @@ namespace SkyFleet.Services
 {
     public class TipoVueloService(IDbContextFactory<SkyFleetContext> DbFactory) : ITipoVueloService
     {
-        private async Task<bool> Existe(int retencionId)
+        private async Task<bool> Existe(int tipoVueloId)
         {
             await using var context = await DbFactory.CreateDbContextAsync();
-            return await context.tipoVuelo.AnyAsync(e => e.tipoVueloId == retencionId);
+            return await context.tipoVuelo.AnyAsync(e => e.tipoVueloId == tipoVueloId);
         }
 
         private async Task<bool> Insertar(TipoVueloDTO tipoVueloDTO)
