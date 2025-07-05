@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyFleet_API", "SkyFleet_API.csproj", "{F8BABB52-0329-485A-8E0E-E536B07B610F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyFleet.Data", "..\SkyFleet.Data\SkyFleet.Data.csproj", "{CAD7AD61-B3CD-428E-A637-E9358F793A49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyFleet.Abstraccion", "..\SkyFleet.Abstraccion\SkyFleet.Abstraccion.csproj", "{31C329A7-84F2-4F36-A967-5FC66BCB33AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyFleet.Domain", "..\SkyFleet.Domain\SkyFleet.Domain.csproj", "{CF53B818-7D43-428B-A5FE-0863D02CF33F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyFleet.Services", "..\SkyFleet.Services\SkyFleet.Services.csproj", "{88024F33-DB9B-41CC-B645-D221B84E8B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{CAD7AD61-B3CD-428E-A637-E9358F793A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAD7AD61-B3CD-428E-A637-E9358F793A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAD7AD61-B3CD-428E-A637-E9358F793A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C329A7-84F2-4F36-A967-5FC66BCB33AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C329A7-84F2-4F36-A967-5FC66BCB33AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C329A7-84F2-4F36-A967-5FC66BCB33AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C329A7-84F2-4F36-A967-5FC66BCB33AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF53B818-7D43-428B-A5FE-0863D02CF33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF53B818-7D43-428B-A5FE-0863D02CF33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF53B818-7D43-428B-A5FE-0863D02CF33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF53B818-7D43-428B-A5FE-0863D02CF33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88024F33-DB9B-41CC-B645-D221B84E8B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88024F33-DB9B-41CC-B645-D221B84E8B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88024F33-DB9B-41CC-B645-D221B84E8B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88024F33-DB9B-41CC-B645-D221B84E8B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
