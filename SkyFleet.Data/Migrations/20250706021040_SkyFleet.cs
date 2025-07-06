@@ -5,7 +5,7 @@
 namespace SkyFleet.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class SkyFleetApp : Migration
+    public partial class SkyFleet : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

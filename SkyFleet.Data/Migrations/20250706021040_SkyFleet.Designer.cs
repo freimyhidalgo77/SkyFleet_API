@@ -11,8 +11,8 @@ using SkyFleet.Data.Context;
 namespace SkyFleet.Data.Migrations
 {
     [DbContext(typeof(SkyFleetContext))]
-    [Migration("20250705214550_SkyFleetApp")]
-    partial class SkyFleetApp
+    [Migration("20250706021040_SkyFleet")]
+    partial class SkyFleet
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

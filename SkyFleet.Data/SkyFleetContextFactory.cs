@@ -12,7 +12,7 @@ namespace SkyFleet.Data
         {
             var optionsBuilder = new DbContextOptionsBuilder<SkyFleetContext>();
 
-            var connectionString = "Server=FREIMYHP\\SQLEXPRESS;Database=SkyFleetDb;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=true;";
+            var connectionString = "workstation id=freimyDbo.mssql.somee.com;packet size=4096;user id=freimyHidalgo77;pwd=srt10db9;data source=freimyDbo.mssql.somee.com;persist security info=False;initial catalog=freimyDbo;TrustServerCertificate=True;";
 
             optionsBuilder.UseSqlServer(connectionString);
 
