@@ -21,6 +21,70 @@ namespace SkyFleet.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("SkyFleet.Data.Model.Aeronaves", b =>
+                {
+                    b.Property<int>("AeronaveId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AeronaveId"));
+
+                    b.Property<int?>("AltitudMaxima")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CapacidadCombustible")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CapacidadPasajeros")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ConsumoXHora")
+                        .HasColumnType("int");
+
+                    b.Property<double?>("CostoXHora")
+                        .HasColumnType("float");
+
+                    b.Property<string>("DescripcionAeronave")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DescripcionCategoria")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DescripcionMotor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Licencia")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModeloAvion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("Peso")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("Rango")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Registracion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("VelocidadMaxima")
+                        .HasColumnType("float");
+
+                    b.Property<int>("estadoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AeronaveId");
+
+                    b.ToTable("aeronaves");
+                });
+
             modelBuilder.Entity("SkyFleet.Data.Model.Rutas", b =>
                 {
                     b.Property<int>("RutaId")
