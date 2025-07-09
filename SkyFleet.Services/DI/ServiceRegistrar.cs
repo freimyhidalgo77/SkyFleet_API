@@ -16,6 +16,7 @@ namespace SkyFleet.Services.DI
             services.RegisterDbContextFactory();
             services.AddScoped<ITipoVueloService, TipoVueloService>();
             services.AddScoped<IRutasService, RutaSercvice>();
+            services.AddScoped<IAeronavesService, AeronaveService>();
             return services;
         }
     }
