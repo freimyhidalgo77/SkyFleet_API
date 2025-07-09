@@ -14,6 +14,6 @@ namespace SkyFleet.Abstraccion
         Task<bool> Eliminar(int aeronaveId);
         Task<AeronaveDTO> Buscar(int id);
         Task<List<AeronaveDTO>> Listar(Expression<Func<AeronaveDTO, bool>> criterio);
-        Task<bool> AeronaveExiste(int id, string DescripcionCategoria);
+        Task<bool> AeronaveExiste(int id);
     }
 }
