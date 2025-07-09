@@ -17,6 +17,8 @@ namespace SkyFleet.Data.Context
 
         public DbSet<Rutas> rutas { get; set; }
 
+        public DbSet<Aeronaves> aeronaves { get; set; }
+
 
     }
 }
