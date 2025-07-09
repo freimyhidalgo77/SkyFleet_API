@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SkyFleet.Domain.DTO
 {
-    class AeronaveDTO
+    public class AeronaveDTO
     {
         public int AeronaveId { get; set; }
         public int estadoId { get; set; }

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace SkyFleet.Data.Model;
-    class Aeronaves
+   public class Aeronaves
     {
 
         [Key]
@@ -44,8 +44,4 @@ namespace SkyFleet.Data.Model;
         [Required(ErrorMessage = "La Licencia es Obligatoria")]
         [RegularExpression(@"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$", ErrorMessage = "El campo solo puede contener letras y espacios.")]
         public string? Licencia { get; set; }
-
-
-
-
 }
